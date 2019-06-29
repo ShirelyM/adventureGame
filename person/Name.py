@@ -1,7 +1,10 @@
 class Name(object):
     ## Constructor.
-    def __init__(self):
+    # @param firstName  String representing the person's first name.
+    # @param lastName   String representing the person's last name.
+    def __init__(self, firstName = "John", lastName = "Doe"):
         self.reset()
+        self.setAll(firstName, lastName)
 
     ## Reset member variables.
     def reset(self):
