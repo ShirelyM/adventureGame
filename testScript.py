@@ -1,5 +1,6 @@
 import os
 from person.Person import Person
+from cardGames.PokerDeck import PokerDeck as deck
 
 ## Main script
 if __name__ == '__main__':
@@ -11,4 +12,11 @@ if __name__ == '__main__':
     justin = Person()
     justin.fromFile(joePath)
 
-    print None
+    newDeck = deck()
+    for card in newDeck.getCards():
+        print card
+
+    print('\n\n\n\n')
+    newDeck.shuffle()
+    for card in newDeck.getCards():
+        print card

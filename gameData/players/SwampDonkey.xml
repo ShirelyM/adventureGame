@@ -6,15 +6,15 @@
         </name>
         <gender>0</gender>
         <hair>
-            <color>0</color>
+            <color>2</color>
             <length>36</length>
         </hair>
         <eyeColor>0</eyeColor>
         <clothes>
             <top>Grey T-Shirt</top>
             <bottom>Blue Jeans</bottom>
-            <shoes> </shoes>
-            <hat> </hat>
+            <shoes>None</shoes>
+            <hat>None</hat>
         </clothes>
     </player>
 </root>
