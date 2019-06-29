@@ -10,6 +10,14 @@ class Clothes(object):
         self.m_shoes = None
         self.m_hat   = None
 
+    ## Populate the Clothes object from an element tree node.
+    # @param node   Element tree node containing the Clothes information
+    def fromFile(self, node):
+        self.setTop(node.find('top').text)
+        self.setBottom(node.find('bottom').text)
+        self.setShoes(node.find('shoes').text)
+        self.setHat(node.find('hat').text)
+
     ## Get the Top
     # @return   String representing the Top
     def getTop(self):
@@ -29,7 +37,7 @@ class Clothes(object):
 
     ## Set the Bottom
     # @param bottom     String representing the bottoms
-    def setBottom(self):
+    def setBottom(self, bottom):
         if not isinstance(bottom, str):
             raise TypeError("Bottom expected a string")
         self.m_bottom = bottom
@@ -41,7 +49,7 @@ class Clothes(object):
 
     ## Set the shoes
     # @param shoes  String representing the shoes.
-    def setShoes(self):
+    def setShoes(self, shoes):
         if not isinstance(shoes, str):
             raise TypeError("Shoes expected a string")
         self.m_shoes = shoes
@@ -53,7 +61,7 @@ class Clothes(object):
 
     ## Set the hat
     # @param hat    String representing the hat
-    def setHat(self):
+    def setHat(self, hat):
         if not isinstance(hat, str):
             raise TypeERror("Hat expected a string")
         self.m_hat = hat

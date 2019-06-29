@@ -21,7 +21,12 @@ class Person(object):
     ## Populate a person object from an XML file.
     # @param filePath   Path to the file that is to be used to populate the Person object.
     def fromFile(self, filePath):
-        root = ET.parse(filePath)
+        node = ET.parse(filePath).find('player')
+        self.getName().fromFile(node.find('name'))
+        self.setGender(int(node.find('gender').text))
+        self.getHair().fromFile(node.find('hair'))
+        self.setEyeColor(int(node.find('eyeColor').text))
+        self.getClothes().fromFile(node.find('clothes'))
 
     ## Retrieve the person's name.
     # @return   Name object.

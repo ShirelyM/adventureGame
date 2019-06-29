@@ -11,6 +11,12 @@ class Name(object):
         self.m_firstName    = ""
         self.m_lastName     = ""
 
+    ## Populate the name from an element tree node.
+    # @param node   Element tree node to populate the name object from.
+    def fromFile(self, node):
+        self.setFirstName(node.find('first').text)
+        self.setLastName(node.find('last').text)
+
     ## Retrieve the first name.
     # @return   String representing person's first name.
     def getFirstName(self):

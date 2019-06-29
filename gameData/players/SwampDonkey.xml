@@ -13,8 +13,8 @@
         <clothes>
             <top>Grey T-Shirt</top>
             <bottom>Blue Jeans</bottom>
-            <shoes></shoes>
-            <hat></hat>
+            <shoes> </shoes>
+            <hat> </hat>
         </clothes>
     </player>
 </root>
