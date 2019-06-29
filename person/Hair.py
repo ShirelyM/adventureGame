@@ -12,8 +12,8 @@ class Hair(object):
 
     ## Reset member variables.
     def reset(self):
-        self.m_hairColor      = hairColor
-        self.m_hairLength     = hairLength
+        self.m_hairColor      = None
+        self.m_hairLength     = None
 
     ## Retrieve the hair color.
     # @return   Integer representing person's hair color.

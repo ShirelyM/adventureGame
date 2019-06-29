@@ -1,6 +1,5 @@
 from person.Name import Name
 from person.Hair import Hair
-from person.Eyes import Eyes
 from person.Clothes import Clothes
 
 import xml.etree.ElementTree as ET
@@ -13,11 +12,11 @@ class Person(object):
 
     ## Reset all member variables
     def reset(self):
-        self.m_name = None
+        self.m_name = Name()
         self.m_gender = None
-        self.m_ hair = None
+        self.m_hair = Hair()
         self.m_eyeColor = None
-        self.m_clothes = None
+        self.m_clothes = Clothes()
 
     ## Populate a person object from an XML file.
     # @param filePath   Path to the file that is to be used to populate the Person object.

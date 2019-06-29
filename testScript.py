@@ -1,3 +1,5 @@
+from person.Person import Person
+
 ## Main script
 if __name__ == '__main__':
     mike = Person()
