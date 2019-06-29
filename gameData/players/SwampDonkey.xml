@@ -1,0 +1,20 @@
+<root>
+    <player>
+        <name>
+            <first>Michael</first>
+            <last>Shirely</last>
+        </name>
+        <gender>0</gender>
+        <hair>
+            <color>0</color>
+            <length>36</length>
+        </hair>
+        <eyeColor>0</eyeColor>
+        <clothes>
+            <top>Grey T-Shirt</top>
+            <bottom>Blue Jeans</bottom>
+            <shoes></shoes>
+            <hat></hat>
+        </clothes>
+    </player>
+</root>

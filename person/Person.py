@@ -3,6 +3,8 @@ from person.Hair import Hair
 from person.Eyes import Eyes
 from person.Clothes import Clothes
 
+import xml.etree.ElementTree as ET
+
 ## Represents a person's base characteristics.
 class Person(object):
     ## Constructor.
@@ -16,6 +18,11 @@ class Person(object):
         self.m_ hair = None
         self.m_eyeColor = None
         self.m_clothes = None
+
+    ## Populate a person object from an XML file.
+    # @param filePath   Path to the file that is to be used to populate the Person object.
+    def fromFile(self, filePath):
+        root = ET.parse(filePath)
 
     ## Retrieve the person's name.
     # @return   Name object.
