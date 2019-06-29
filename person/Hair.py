@@ -3,6 +3,13 @@ class Hair(object):
     def __init__(self):
         self.reset()
 
+    ## Set the hair color and hair length.
+    # @param hairColor   Integer representing the person's hair color.
+    # @param hairLength  Integer representing the person's hair length
+    def setAll(self, hairColor, hairLength):
+        self.setHairColor(hairColor)
+        self.setHairLength(hairLength)
+
     ## Reset member variables.
     def reset(self):
         self.m_hairColor      = hairColor
@@ -32,9 +39,3 @@ class Hair(object):
             raise TypeError("Expected hair length to be a integer")
         self.m_hairLength = hairLength
 
-    ## Set the hair color and hair length.
-    # @param hairColor   Integer representing the person's hair color.
-    # @param hairLength  Integer representing the person's hair length
-    def setAll(self, hairColor, hairLength):
-        self.setHairColor(hairColor)
-        self.setHairLength(hairLength)
