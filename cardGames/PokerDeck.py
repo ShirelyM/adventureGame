@@ -20,6 +20,14 @@ class PokerDeck(object):
     def getCards(self):
         return self.m_cards
 
-    ## Shuffle the desk
+    ## Shuffle the deck
     def shuffle(self):
         random.shuffle(self.m_cards)
+
+    ## Retrieve a single card from the top of the deck
+    #@ return   Card object representing card on top of the deck
+
+    def getdraw(self):
+        if len(m_cards) > 0
+            return m_cards.pop(0)
+        print "The deck is empty"
