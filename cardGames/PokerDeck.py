@@ -26,8 +26,7 @@ class PokerDeck(object):
 
     ## Retrieve a single card from the top of the deck
     #@ return   Card object representing card on top of the deck
-
-    def getdraw(self):
+    def drawCard(self):
         if len(m_cards) > 0
             return m_cards.pop(0)
         print "The deck is empty"
